@@ -1,9 +1,7 @@
 function main(){
-  
   moveFourTimes();
   turnLeft();
   moveFourTimes();
-  
 }
 
   function moveFourTimes(){
