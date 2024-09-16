@@ -1,9 +1,27 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+function lifeInWeeks(age) {
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+    var daysInYear = 365;
+    var weeksInYear = 52;
+    var monthsInYear = 12;
+    var yearsForLife = 90;
+    
+    var peopleTotalDay = daysInYear * age;
+    var totalDayForLife = yearsForLife * daysInYear;
+    var daysLeft = totalDayForLife - peopleTotalDay;
+
+    var peopleTotalWeeks = weeksInYear * age;
+    var totalWeeksForLife = weeksInYear * yearsForLife; 
+    var weeksLeft = totalWeeksForLife - peopleTotalWeeks;
+
+    var peopleTotalMonths = monthsInYear * age;
+    var totalMonthsForLife = yearsForLife * monthsInYear;
+    var monthsLeft = totalMonthsForLife - peopleTotalMonths; 
+    
+    console.log("You have " + daysLeft + " days" + ", " + weeksLeft + " weeks" + ", " +  "and " + monthsLeft + " months left.");
+    
+}
+
+  lifeInWeeks(56);
 
 
 
