@@ -1,9 +1,45 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
-
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+ 
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+ 
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+ 
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+ 
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
 
 
 
