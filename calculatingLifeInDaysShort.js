@@ -1,9 +1,15 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+function lifeInWeeks(age) {
+  
+    var yearsRemaining = 90 - age;
+    var days = yearsRemaining * 365;
+    var weeks = yearsRemaining * 52;
+    var months = yearsRemaining * 12;
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+    console.log("You have " + days + " days" + ", " + weeks + " weeks" + ", " +  "and " + months + " months left.");
+    
+}
+
+  lifeInWeeks(56);
 
 
 
