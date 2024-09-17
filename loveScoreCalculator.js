@@ -1,9 +1,10 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+prompt("What is your name?");
+prompt("Whats is their name?");
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+var  loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+
+alert("Your lovescore is: " + loveScore + "%");
 
 
 
