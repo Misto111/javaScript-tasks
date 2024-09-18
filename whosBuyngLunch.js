@@ -1,9 +1,13 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+function whosPaying(names) {
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to buy lunch today!";
+}
+
+whosPaying(["Stanimira", "Miro", 'Hachi']);
 
 
 
