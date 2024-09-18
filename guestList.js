@@ -1,9 +1,12 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+var guetList = ["Miro", "Jack", "Pam", "Sara", "Hachi"];
+var guestName = prompt('What is your name?');
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+if(guetList.includes(guestName)) {
+    alert("Welcome!");
+}else {
+    alert("Sorry, maybe next time!");
+}
+
 
 
 
