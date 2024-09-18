@@ -1,9 +1,25 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+var output = [];
+var count = 1;
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+function fizzBuzz() {
+
+   if(count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+       
+   }else if(count % 3 === 0) {
+        output.push("Fizz");
+        
+    }else if(count % 5 === 0) {
+        output.push("Buzz");
+        
+    } else {
+        output.push(count);
+    }
+
+    count++;
+
+    console.log(output);
+}
 
 
 
