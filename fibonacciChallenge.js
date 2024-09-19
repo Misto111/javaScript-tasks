@@ -1,9 +1,24 @@
-var text = prompt("Write your text here:");
-var bouderOne = prompt("Write your start bounder here:");
-var bouderTwo = prompt("Write your end bounder here:");
-var boundingTexth = text.slice(bouderOne, bouderTwo);
+function fibonacciGenerator(n) {
 
-alert("You have written " + text + ". " + "Your text after boundering is : " + boundingTexth + ".");
+    var output = [];
+
+    if(n === 1) {
+        output = [0];
+        
+    }else if(n === 2) {
+        output = [0, 1];
+        
+    }else {
+        output = [0, 1];
+
+        for (var i = 2; i < n; i ++) {
+            output.push(output[output.length - 2] + 
+            output[output.length -1]);
+        }
+    }
+    
+    return output;
+}
 
 
 
