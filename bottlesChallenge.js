@@ -1,4 +1,4 @@
-var count = 100;
+var count = 99;
 
 function buyBeer() {
 
