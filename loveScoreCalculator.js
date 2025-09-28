@@ -4,11 +4,11 @@ prompt("Whats is their name?");
 var  loveScore = Math.random() * 100;
 loveScore = Math.floor(loveScore) + 1;
 
-if(loveScore >= 80) {
+if(loveScore >= 85) {
     alert("Your lovescore is: " + loveScore + "%." + " You are made for each other!");
 }
 
-if(loveScore >= 30 && loveScore < 80) {
+if(loveScore >= 30 && loveScore < 85) {
         
         alert("Your lovescore is: " + loveScore + "%");
     }
