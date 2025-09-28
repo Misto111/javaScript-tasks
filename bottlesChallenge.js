@@ -15,10 +15,8 @@ function buyBeer() {
         }
     
     count--;
-
-}
-
-
+ 
+    }
 }
 
 
